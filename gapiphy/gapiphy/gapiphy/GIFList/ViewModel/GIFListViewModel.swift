@@ -20,11 +20,11 @@ class GIFListViewModel {
     
     @Published var maxSearch: Int
     
+    @Published var isLoading = false
+    
     var total: Int = 0
     
     var isSearching = false
-    
-    var isLoading = false
     
     var searchText: String?
     

@@ -21,6 +21,8 @@ class GIFGridView: UIViewController {
     
     var maxSavedSearchesCancellable: AnyCancellable?
     
+    var isLoadingCanecellable: AnyCancellable?
+    
     private let container = UIView()
     
     private let searchBar: UISearchBar = {
@@ -33,6 +35,8 @@ class GIFGridView: UIViewController {
     private let gifCollection = GIFGrid()
     
     private let recentSearch = RecentSearchGrid()
+    
+    private let loadingVC = LoadingViewController()
     
     override func loadView() {
         super.loadView()
@@ -48,7 +52,6 @@ class GIFGridView: UIViewController {
     }
     
     private func configureNavigationBar() {
-        navigationItem.largeTitleDisplayMode = .always
         title = "Gapiphy"
     }
     
@@ -114,6 +117,19 @@ class GIFGridView: UIViewController {
             .sink { maxSavedSearch in
                 self.recentSearch.updateUI(withMaxSavedSearches: maxSavedSearch)
             }
+        isLoadingCanecellable = viewModel.$isLoading
+            .receive(on: DispatchQueue.main)
+            .sink { isLoading in
+                self.updateUI(withIsLoading: isLoading)
+            }
+    }
+    
+    func updateUI(withIsLoading isLoading: Bool) {
+        if isLoading {
+            add(loadingVC)
+        } else {
+            loadingVC.remove()
+        }
     }
     
 }
