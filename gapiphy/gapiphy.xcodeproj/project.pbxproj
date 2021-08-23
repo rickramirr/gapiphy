@@ -27,6 +27,8 @@
 		5E1622CE26D2F49C0009B33E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1622CD26D2F49C0009B33E /* Coordinator.swift */; };
 		5E1622D026D2F9260009B33E /* GIFDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1622CF26D2F9260009B33E /* GIFDetailView.swift */; };
 		5E1622D226D30DD60009B33E /* RecentSearchGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1622D126D30DD60009B33E /* RecentSearchGrid.swift */; };
+		5E24553C26D400D5003708E0 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24553B26D400D5003708E0 /* LoadingViewController.swift */; };
+		5E24553F26D4011F003708E0 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24553E26D4011F003708E0 /* UIViewController.swift */; };
 		5E6641AD26D3206B00409132 /* RecentSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6641AC26D3206B00409132 /* RecentSearchCell.swift */; };
 		5EB8FCDD26D3222A00722BC7 /* RecentSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8FCDC26D3222A00722BC7 /* RecentSearchManager.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +76,8 @@
 		5E1622CD26D2F49C0009B33E /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		5E1622CF26D2F9260009B33E /* GIFDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFDetailView.swift; sourceTree = "<group>"; };
 		5E1622D126D30DD60009B33E /* RecentSearchGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchGrid.swift; sourceTree = "<group>"; };
+		5E24553B26D400D5003708E0 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		5E24553E26D4011F003708E0 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		5E6641AC26D3206B00409132 /* RecentSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchCell.swift; sourceTree = "<group>"; };
 		5EB8FCDC26D3222A00722BC7 /* RecentSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentSearchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +131,8 @@
 		5E1027A026D07321003067E8 /* gapiphy */ = {
 			isa = PBXGroup;
 			children = (
+				5E24553D26D40111003708E0 /* Extensions */,
+				5E24553A26D400C2003708E0 /* Common */,
 				5E6641A926D31FBA00409132 /* Manager */,
 				5E1622CC26D2F4860009B33E /* Coordinator */,
 				5E1622BE26D1A8C40009B33E /* Services */,
@@ -137,6 +143,7 @@
 				5E1027A526D07321003067E8 /* ViewController.swift */,
 				5E1027AC26D07323003067E8 /* LaunchScreen.storyboard */,
 				5E1027AF26D07323003067E8 /* Info.plist */,
+				5E24553B26D400D5003708E0 /* LoadingViewController.swift */,
 			);
 			path = gapiphy;
 			sourceTree = "<group>";
@@ -247,6 +254,21 @@
 				5E1622CD26D2F49C0009B33E /* Coordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5E24553A26D400C2003708E0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5E24553D26D40111003708E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E24553E26D4011F003708E0 /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		5E6641A926D31FBA00409132 /* Manager */ = {
@@ -395,8 +417,10 @@
 				5E1622CB26D2D92C0009B33E /* GIFGrid.swift in Sources */,
 				5E6641AD26D3206B00409132 /* RecentSearchCell.swift in Sources */,
 				5E1622B626D17B6E0009B33E /* GIF.swift in Sources */,
+				5E24553F26D4011F003708E0 /* UIViewController.swift in Sources */,
 				5E1622D226D30DD60009B33E /* RecentSearchGrid.swift in Sources */,
 				5E1622CE26D2F49C0009B33E /* Coordinator.swift in Sources */,
+				5E24553C26D400D5003708E0 /* LoadingViewController.swift in Sources */,
 				5E1027A626D07321003067E8 /* ViewController.swift in Sources */,
 				5E1622D026D2F9260009B33E /* GIFDetailView.swift in Sources */,
 				5E1622B026D177010009B33E /* GIFGridView.swift in Sources */,
